@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/garments"
+        android:title="Dress"
+        android:icon="@drawable/ic_wc_black_24dp">
+        <menu>
+        <item
+            android:id="@+id/male"
+            android:title="Boys"
+            android:icon="@drawable/ic_boy_dress"/>
+        <item
+        android:id="@+id/female"
+        android:title="Girls"
+        android:icon="@drawable/ic_girl"/>
+
+        <item
+        android:id="@+id/kids"
+        android:title="Kids"
+        android:icon="@drawable/ic_kid_24dp"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/fashion"
+        android:title="Fashion"
+        android:icon="@drawable/ic_fashion_24dp"/>
+
+    <item
+        android:id="@+id/movie"
+        android:title="Get Movie Info"
+        android:icon="@drawable/ic_movie_24dp"/>
+
+    <item
+        android:id="@+id/deliverly_location"
+        android:title="Set Location"
+        android:icon="@drawable/ic_add_location_black_24dp"/>
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_logout_24dp"/>
+
+</menu>

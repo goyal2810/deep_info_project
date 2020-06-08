@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">deepInfo</string>
+    <string name="email_hint">User Id</string>
+    <string name="password_hint">Password</string>
+    <string name="login_text">Log In</string>
+    <string name="sign_up_text">Join Us!!</string>
+    <string name="forgot_password">Upsss..forgot Password</string>
+    <string name="title_activity_sign_up_screen">signUpScreen</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="select_user_Id">Select a unique User Id</string>
+    <string name="select_password">Use 8 digit Strong Password</string>
+    <string name="confirm_password">Confirm your password again</string>
+    <string name="recaptcha_validation">Enter Re-captcha</string>
+    <string name="security_answer">Enter your security answer</string>
+    <string name="recaptcha_checkbox">Proof that you are not robot</string>
+    <string name="sign_up_complete">Completed Entry </string>
+    <string name="alert_title">Choose location for Profile Picture </string>
+
+    <string name="forget_password_user_id_label">Enter UserId </string>
+    <string name="forget_password_user_id_label_hint">User Id for forgotten Account </string>
+    <string name="security_answer_for_forget_password"> Security Answer? </string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="enter_user_id">User Id cant be nil</string>
+    <string name="enter_user_password">Password cant be nil</string>
+    <string name="mismatch_confirm_password">Confirm password did not match</string>
+    <string name="enter_security_answer">Security answer cant be nil</string>
+
+    <string name="open">NavBar</string>
+    <string name="close">NavBar</string>
+
+    <string-array name="question_List">
+        <item>safsadfasdfsafsadf</item>
+        <item>cdasfsafafafsa</item>
+        <item>ffsdafaffssfsaf</item>
+        <item>rrerewrewrewrwe</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

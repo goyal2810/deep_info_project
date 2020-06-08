@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sign_up_scroll"
+    android:background="@color/signup_background">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".SignUpScreen">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/sign_up_toolbar"
+            android:layout_width="match_parent"
+            android:background="@color/colorAccent"
+            android:layout_height="?attr/actionBarSize"/>
+
+
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:baselineAligned="false"
+            android:src="@mipmap/profile_pic_image" />
+
+        <EditText
+            android:id="@+id/input_user_id"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="64dp"
+            android:hint="@string/select_user_Id"
+            android:textAlignment="center"
+            android:textColor="@color/login_textColor"
+            android:textColorHint="@color/login_textColor"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/input_user_password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="32dp"
+            android:hint="@string/select_password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="@color/login_textColor"
+            android:textColorHint="@color/login_textColor"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="32dp"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="@color/login_textColor"
+            android:textColorHint="@color/login_textColor"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/security_questions"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="32dp"
+            android:spinnerMode="dialog" />
+
+        <EditText
+            android:id="@+id/security_answer"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="32dp"
+            android:hint="@string/security_answer"
+            android:textAlignment="center"
+            android:textColor="@color/login_textColor"
+            android:textColorHint="@color/login_textColor"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/recaptcha_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/recaptcha" />
+
+        <CheckBox
+            android:id="@+id/recaptcha_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="-42dp"
+            android:text="@string/recaptcha_checkbox"
+            android:textAlignment="center"
+            android:textColor="@color/login_textColor"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/signup_complete"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:background="@color/sign_up_color"
+            android:text="@string/sign_up_complete"
+            android:textColor="@color/login_textColor" />
+
+        <!--    <include layout="@layout/content_sign_up_screen" />-->
+
+    </LinearLayout>
+</ScrollView>

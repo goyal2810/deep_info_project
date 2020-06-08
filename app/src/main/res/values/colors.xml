@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name = "login_background">#181919</color>
+    <color name = "signup_background">#012929</color>
+    <color name = "login_textColor">#E7F3F3</color>
+    <color name = "login_button_color">#024343</color>
+    <color name = "sign_up_color">#4EF355</color>
+    <color name = "forgot_password_label">#5D07F6</color>
+    <color name = "shopping_list_background_color">#10A6EA</color>
+</resources>
