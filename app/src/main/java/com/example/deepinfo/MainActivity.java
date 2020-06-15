@@ -1,8 +1,5 @@
 package com.example.deepinfo;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.room.Room;
-
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -12,7 +9,9 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.Room;
 
 import com.basgeekball.awesomevalidation.AwesomeValidation;
 import com.basgeekball.awesomevalidation.ValidationStyle;
@@ -82,10 +81,13 @@ public class MainActivity extends AppCompatActivity {
         String idText = userName.getText().toString();
         String passText = userPassword.getText().toString();
 
+        Utility utilityClass = new Utility();
+        String hexaPassword = utilityClass.md5(passText);
+
         awesomeValidation.addValidation(this, R.id.user_name, RegexTemplate.NOT_EMPTY, R.string.enter_user_id);
         awesomeValidation.addValidation(this, R.id.password_name, ".{8,}", R.string.enter_user_password);
         if(awesomeValidation.validate()) {
-            PersonInfo isSuccess = personDao.tryLogin(idText, passText);
+            PersonInfo isSuccess = personDao.tryLogin(idText, hexaPassword);
             if (isSuccess != null) {
                 Boolean isRemembered = remeberMe.isChecked();
                 SharedManagement newSharedManagement = new SharedManagement(MainActivity.this);

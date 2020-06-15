@@ -33,6 +33,11 @@
         android:icon="@drawable/ic_movie_24dp"/>
 
     <item
+        android:id="@+id/music"
+        android:title="Play Music"
+        android:icon="@drawable/music_logo_foreground"/>
+
+    <item
         android:id="@+id/deliverly_location"
         android:title="Set Location"
         android:icon="@drawable/ic_add_location_black_24dp"/>

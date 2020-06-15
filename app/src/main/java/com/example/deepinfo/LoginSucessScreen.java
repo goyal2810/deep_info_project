@@ -61,9 +61,13 @@ public class LoginSucessScreen extends AppCompatActivity {
                     case R.id.fashion:
                         fragment = new FashionItem();
                     break;
-                    case R.id.movie:
+                    case R.id.music:
                        Intent musicLibrary = new Intent(LoginSucessScreen.this, MusicPlayer.class);
                        startActivity(musicLibrary);
+                    break;
+                    case R.id.movie:
+                        Intent searchMovie = new Intent(LoginSucessScreen.this, MovieResult.class);
+                        startActivity(searchMovie);
                     break;
                     case R.id.deliverly_location:
                         Intent deliveryLocation =  new Intent(LoginSucessScreen.this, DeliveryLocation.class);
@@ -119,6 +123,7 @@ public class LoginSucessScreen extends AppCompatActivity {
     public void logoutCurrentUser(){
         SharedManagement sharedManagement = new SharedManagement(LoginSucessScreen.this);
         sharedManagement.removeSession();
+//        Intent logoutMe = new Intent(LoginSucessScreen.this, LogoutAnimation.class);
         Intent logoutMe = new Intent(LoginSucessScreen.this, MainActivity.class);
         startActivity(logoutMe);
     }

@@ -33,8 +33,6 @@ import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.safetynet.SafetyNet;
 import com.google.android.gms.safetynet.SafetyNetApi;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -179,7 +177,8 @@ public class SignUpScreen extends AppCompatActivity implements GoogleApiClient.C
             String securityAnswer = securityAnswerField.getText().toString();
             String securityQuestion = securityQuestionsField.getSelectedItem().toString();
 
-            String hashPassword = md5(password);
+            Utility utilityClass = new Utility();
+            String hashPassword = utilityClass.md5(password);
 
 //      Convertion of Image view to byte array
 //        Bitmap bitmap = ((BitmapDrawable)profilePicture.getDrawable()).getBitmap();
@@ -192,23 +191,6 @@ public class SignUpScreen extends AppCompatActivity implements GoogleApiClient.C
             Toast.makeText(this, "Data Saved!! Now Login Quickly", Toast.LENGTH_LONG).show();
 
         }
-    }
-
-    public String md5(String s){
-        try{
-            MessageDigest digest = java.security.MessageDigest.getInstance("MD5");
-            digest.update(s.getBytes());
-            byte messageDigest[] = digest.digest();
-
-            StringBuffer hexString = new StringBuffer();
-            for(int i = 0; i< s.length(); i++){
-                hexString.append(Integer.toHexString(0xFF & messageDigest[i]));
-                return hexString.toString();
-            }
-        } catch (NoSuchAlgorithmException e){
-            e.printStackTrace();
-        }
-        return "";
     }
 
     @Override

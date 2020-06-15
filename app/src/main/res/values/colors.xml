@@ -10,4 +10,5 @@
     <color name = "sign_up_color">#4EF355</color>
     <color name = "forgot_password_label">#5D07F6</color>
     <color name = "shopping_list_background_color">#10A6EA</color>
+    <color name = "movie_list_background">#CDDC39</color>
 </resources>
